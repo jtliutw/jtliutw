@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>建廷與他的87網頁們</title>
+
+   <!-- Bootstrap -->
+   <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+   <link href="style.css" rel="stylesheet">
+   <link rel="icon" type="image/png" href="http://prototype-hacker.com/wp-content/themes/prototype-hacker/css/img/logo.jpg">
+
+   <meta property="og:image" content="http://prototype-hacker.com/wp-content/themes/prototype-hacker/css/img/logo_vertical_big.jpg">
+
+   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+   <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+   <![endif]-->
+ </head>
+ <body>
+   <div id="header">
+       <div class="container">
+           <div class="row">
+               <div class="col-xs-6 logo">
+                   <a href="/"><img src="http://www.todayifoundout.com/wp-content/uploads/2015/07/coffee2.png?width=200&height=200" alt="prototype hacker logo"></a>
+               </div>
+           </div>
+       </div>
+   </div>
+   <div class="container">
+        <h1>我的第一個Github首頁</h1>
+        <hr>
+        <div class="row class" id="third">
+            <h3>106上 網頁設計與資料交換</h3>
+            <div class="col-md-4 col-sm-6 member"></div>
+           <div class="col-md-4 col-sm-6 member">
+               <img src="http://graph.facebook.com/v2.9/100000391845230/picture?width=200&height=200" class="img-circle" alt="JtLiu">
+               <h5>JtLiu</h5>
+               <div class="title">
+                   <span class="label label-primary">菸酒生</span>
+                   <span class="label label-success">咖啡</span>
+                   <span class="label label-success">排球</span>
+               </div>
+               <p class="description">
+                   如果我不在LAB，就是在咖啡館；如果不是在咖啡館，就是在往LAB的路上Q Q
+               </p>
+               <p class="email">
+                   <span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;<a href="mailto:jtliutw@gmail.com">jtliutw@gmail.com</a>
+               </p>
+            </div>             
+        </div>
+
+
+
+        <hr> 
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function() { 
+        // 當 DOM 載入完成，執行裡面的程式
+        });
+        $(window).load(function(){
+            $(".member img").on("error", function(){
+                $(this).attr('src', 'https://unsplash.it/200/200/?gravity=east');
+            });
+        });
+    </script>
+  </body>
+</html>
